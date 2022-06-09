@@ -1,5 +1,5 @@
 # ResearchUW
-Archives of my research work for SMALS at UW, the whole project that I took part of can be found
+Archives of my research work for SMALS at UW, the whole project that I took part of can be found in this folder: Linh_Poster/2021 Fall RRF proposal Trujillo-1 (1).pdf
 
 In this research project, I:
 
