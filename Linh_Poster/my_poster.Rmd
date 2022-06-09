@@ -1,0 +1,96 @@
+---
+title: "**Short title:** Flexdashboard poster template"
+output: 
+  postr::flex_dashboard_poster:
+    render_print: TRUE
+classoption: landscape
+    #css: ["resources/fontawesome-all.css"]
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+library(hrbrthemes)
+library(patchwork)
+library(ggpubr)
+
+#hrbrthemes::import_roboto_condensed()
+
+#library(webshot)
+#webshot("file:///Users/linhnguyen/Desktop/BIS498/SMALS2/my_poster.html", "my_poster.png", expand = c(40, 20, 40, 20))
+
+#nitr::opts_chunk$set(echo = TRUE)
+#devtools::install_github("odeleongt/postr")
+#webshot::install_phantomjs()
+#postr::render("my_poster/my_poster.Rmd")
+load('SMALS.Rdata')
+```
+
+## Header row {data-height=15}
+
+###
+
+<table style="width:100%, padding: 30px 30px 10px;">
+
+<tr style="background-color:#4B2E83;">
+  <td><h1 style = "color:white;margin-left:50px;">
+  **Student-made Models Analyzed at Large Scales (SMALS)**
+  </h1>
+  
+  <img src = "figure/yellow_line.png" align = "left" style = "width:5%; height:10%;"></img>
+  <img src = "figure/yellow_line.png" align = "left" style = "width:5%; height:10%;"></img>
+  <img src = "figure/yellow_line.png" align = "left" style = "width:5%; height:10%;"></img>
+
+  <br></br>
+  <h4 style = "color:white;margin-left:50px;"> **Linh Nguyen, Scott Corbitt, Emmanuel Gabriel, Darcie Nelson, Prim Bunyakiat, Caleb Trujillo** </h4> 
+  <h4 style = "color:white;margin-left:50px;"> University of Washington Bothell</h4>
+  </center></td>
+  <td rowspan="2">
+  <img src = "https://www.washington.edu/wp-content/themes/be-boundless/campaign/img/W-Logo_White.png" align = "right" style= "width:80%;">
+  </img>
+  </td>
+  
+</tr>
+
+</table> 
+<hr>
+
+**Abstract** 
+
+
+
+
+## Body row {data-height=75}
+
+<table style= "padding-bottom:30px;padding-left: 30px;padding-right: 30px;"></table>
+
+
+### **Intro** {data-width=300}
+
+#### Research Question 
+How cognitive network growth as  explanation of the learning processes evident in student models?
+
+#### Objective
+1. Explore the use of network approaches as a means to assess learning evident in models made by students in biology and statistics.
+
+Explore the use of network approaches as a means to assess learning evident in models made by students by statistics
+
+#### Project impact
+The project will further an understanding of models used in STEM education and strengthen interdisciplinary connections between disparate fields such as data science, learning theory, and discipline-specific education. In doing this, our research can provide evidence that fulfills recommendations from leaders on policy regarding educational changes
+
+### **Column 2 title** {data-width=700}
+
+```{r}
+ggarrange(figcohesion + theme(aspect.ratio=1),figdiameter  + theme(aspect.ratio=1),figcentrality  + theme(aspect.ratio=1), nrow = 1, common.legend = TRUE, legend = "none")
+```
+
+## Footer row {data-height=1} 
+
+### {data-width=50}
+
+
+### {data-width=50 .small}
+
+
+In collaboration with Tammy Long at Michigan State University
+
